@@ -18,7 +18,7 @@ function Login() {
       </form>
       <section>
         <NavLink to="/register">S'inscrire</NavLink>
-        <NavLink to="/login">Se connecter</NavLink>
+        <NavLink to="/home">Se connecter</NavLink>
       </section>
     </section>
   );

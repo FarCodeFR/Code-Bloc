@@ -11,7 +11,9 @@ import {
 
 // Import the main app component
 import App from "./App";
+import CreateCode from "./pages/CreateCode";
 import Form from "./pages/Form";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -45,6 +47,16 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+        children: [
+          {
+            path: "create-code",
+            element: <CreateCode />,
+          },
+        ],
       },
     ],
   },
