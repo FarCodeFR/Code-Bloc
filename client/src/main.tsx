@@ -11,8 +11,11 @@ import {
 
 // Import the main app component
 import App from "./App";
+import CreateCode from "./pages/CreateCode";
 import Form from "./pages/Form";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
+import MyCode from "./pages/MyCode";
 import Register from "./pages/Register";
 
 // Import additional components for new routes
@@ -45,6 +48,20 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+        children: [
+          {
+            path: "my-code",
+            element: <MyCode />,
+          },
+          {
+            path: "create-code",
+            element: <CreateCode />,
+          },
+        ],
       },
     ],
   },

@@ -1,0 +1,53 @@
+.container-card-button {
+  display: flex;
+  justify-content: center;
+  margin: 3% auto;
+  & button {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 2em;
+    width: 60%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  & button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+  }
+}
+
+/* * Card */
+
+.container-form-card {
+  border: solid black;
+  width: 25%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.container-form-card > figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  & input {
+    width: 80%;
+    margin: 5% auto;
+    text-align: center;
+    height: 5em;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  & select {
+    margin: 10% auto;
+    width: 50%;
+    height: 5em;
+    border-radius: 15px;
+    text-align: center;
+  }
+}
