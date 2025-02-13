@@ -1,5 +1,6 @@
 .container-form {
   text-align: center;
+  font-family: var(--font-family);
   margin: 10% auto;
   & nav {
     display: flex;
@@ -21,12 +22,13 @@
   height: 2em;
   align-content: center;
   border-radius: 20px;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
+  border: black solid;
   color: white;
 }
 
 .container-form > nav > a:hover {
-  background-color: rgb(235, 102, 255);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.4s;
 }

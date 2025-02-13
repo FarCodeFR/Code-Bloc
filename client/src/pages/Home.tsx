@@ -6,7 +6,7 @@ function Home() {
     <>
       <header className="container-home-navigation">
         <NavLink to="/home">
-          <h1>Code-Bloc</h1>
+          <h1>Logo-Bloc</h1>
         </NavLink>
         <nav>
           <NavLink to="/profil">Profil</NavLink>

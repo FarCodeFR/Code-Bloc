@@ -35,14 +35,14 @@ function FormCard({ defaultValue, onSubmit }: CardFromProps) {
             name="title"
             required
             defaultValue={defaultValue.title}
-            placeholder="Function handleClick"
+            placeholder="Titre"
           />
           <input
             name="image"
             required
             defaultValue={defaultValue.image}
             type="text"
-            placeholder="Votre image"
+            placeholder="Votre logo"
           />
           <input
             name="description"

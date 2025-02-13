@@ -5,7 +5,7 @@ function Form() {
   return (
     <header className="container-form">
       <section>
-        <h1>Bienvenue sur Code-Bloc</h1>
+        <h1>Bienvenue sur Logo-Bloc</h1>
       </section>
       <nav>
         <NavLink to="/login">login</NavLink>
