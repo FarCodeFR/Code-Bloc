@@ -7,6 +7,7 @@ type CardData = {
 interface CardFromProps {
   onSubmit: (card: CardData) => void;
   defaultValue: CardData;
+  children?: React.ReactNode;
 }
 
 function FormCard({ defaultValue, onSubmit }: CardFromProps) {
@@ -46,6 +47,7 @@ function FormCard({ defaultValue, onSubmit }: CardFromProps) {
           <input
             name="description"
             required
+            placeholder="Description"
             defaultValue={defaultValue.description}
             type="text"
           />

@@ -24,4 +24,16 @@ router.get("/api/card", cardActions.browse);
 
 router.post("/api/card", cardActions.add);
 
+// Card id
+
+router.get("/api/card/:id", cardActions.read);
+
+// Card Edit
+
+router.put("/api/card/:id", cardActions.edit);
+
+// Card Delete
+
+router.delete("/api/card/:id", cardActions.destroy);
+
 export default router;

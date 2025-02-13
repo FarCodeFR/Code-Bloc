@@ -11,6 +11,8 @@ import {
 
 // Import the main app component
 import App from "./App";
+import CardDetail from "./pages/CardDetail";
+import CardEdit from "./pages/CardEdit";
 import CreateCode from "./pages/CreateCode";
 import Form from "./pages/Form";
 import Home from "./pages/Home";
@@ -62,6 +64,14 @@ const router = createBrowserRouter([
             element: <CreateCode />,
           },
         ],
+      },
+      {
+        path: "/card/:id",
+        element: <CardDetail />,
+      },
+      {
+        path: "/card/:id/edit",
+        element: <CardEdit />,
       },
     ],
   },

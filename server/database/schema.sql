@@ -21,5 +21,9 @@ VALUES
 
 INSERT INTO card (id, title, description, image, utilisateur_id)
 VALUES
-  (1, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1);
+  (1, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1),
+  (2, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1),
+  (3, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1),
+  (4, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1),
+  (5, 'Function handleClick', "description", "https://media.istockphoto.com/id/1985150440/fr/photo/new-zealand-road-trip-at-lake-hawea.jpg?s=612x612&w=0&k=20&c=Y4BOM7f9_i1UNNiUEDF-dlQXLbSWpHn7sBW28pf5240=", 1);
 

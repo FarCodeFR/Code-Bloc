@@ -1,0 +1,131 @@
+.container-card-detail-index {
+  border: black solid 10px;
+  width: 70vh;
+  height: 80%;
+  padding: 0px;
+  border-radius: 15px;
+  margin: 3% auto;
+  & figure {
+    text-align: center;
+    border-radius: 15px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  & h3,
+  figcaption {
+    border-radius: 15px;
+    height: 3em;
+    width: 50%;
+    margin: 5% auto;
+    align-content: center;
+  }
+  & h3 {
+    font-size: 24px;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 0px 0px 15px 15px;
+    border: solid black 5px;
+    background-color: black;
+    color: white;
+    padding: 0;
+  }
+  & img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 15px;
+    border: solid rgba(16, 16, 16, 0.748) 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px
+      3px 7px -3px;
+  }
+  & figcaption {
+    border: solid black;
+    width: 90%;
+    max-height: 100%;
+    margin: 2% 0% 0% 0 auto;
+    font-size: 20px;
+  }
+}
+
+.container-card-detail-index > figure > picture {
+  display: block;
+  width: 90%;
+  margin: 3% auto;
+  height: 60vh;
+}
+
+#modify-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  top: 40%;
+  left: 7%;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: 2em;
+  align-items: center;
+  width: 15%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#modify-card:hover {
+  background-color: white;
+  color: black;
+  border: black solid;
+  transition: 0.2s;
+}
+
+#home-card:hover {
+  background-color: white;
+  color: black;
+  border: black solid;
+  transition: 0.2s;
+}
+#home-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  top: 30%;
+  left: 7%;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: 2em;
+  align-items: center;
+  width: 15%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#delete-card:hover {
+  background-color: white;
+  color: black;
+  border: black solid;
+  transition: 0.2s;
+}
+#delete-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  top: 50%;
+  left: 7%;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: 2em;
+  align-items: center;
+  width: 15%;
+  transition: 0.3s;
+  cursor: pointer;
+}
