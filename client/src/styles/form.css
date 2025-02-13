@@ -1,0 +1,32 @@
+.container-form {
+  text-align: center;
+  margin: 10% auto;
+  & nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15%;
+    gap: 40%;
+  }
+  & h1 {
+    font-family: var(--font-family);
+    font-size: 90px;
+  }
+}
+
+.container-form > nav > a {
+  text-decoration: none;
+  font-size: 56px;
+  width: 10em;
+  height: 2em;
+  align-content: center;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+}
+
+.container-form > nav > a:hover {
+  background-color: rgb(235, 102, 255);
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
