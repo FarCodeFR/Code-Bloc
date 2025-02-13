@@ -28,15 +28,17 @@ function CardDetail() {
             <figcaption>{card.description}</figcaption>
           </figure>
         </section>
-        <NavLink id="modify-card" to={`/card/${card.id}/edit`}>
-          Modifier
-        </NavLink>
-        {typeof card.id === "number" && (
-          <CardDelete id={card.id}>Supprimer</CardDelete>
-        )}
-        <NavLink id="home-card" to={"/home/create-code"}>
-          Accueil
-        </NavLink>
+        <section className="container-nav-detail">
+          <NavLink id="modify-card" to={`/card/${card.id}/edit`}>
+            Modifier
+          </NavLink>
+          {typeof card.id === "number" && (
+            <CardDelete id={card.id}>Supprimer</CardDelete>
+          )}
+          <NavLink id="home-card" to={"/home/create-code"}>
+            Accueil
+          </NavLink>
+        </section>
       </>
     )
   );

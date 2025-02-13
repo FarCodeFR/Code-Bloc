@@ -4,7 +4,7 @@ import "../styles/register.css";
 function Register() {
   return (
     <section className="container-form-register">
-      <h1>Ravie de vous revoir</h1>
+      <h1>Rejoignez Logo-Bloc</h1>
       <form>
         <label htmlFor="email">Enter your email:</label>
         <input

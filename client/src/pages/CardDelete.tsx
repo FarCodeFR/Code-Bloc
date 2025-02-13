@@ -16,7 +16,7 @@ function CardDelete({ id, children }: CardDeleteProps) {
           method: "DELETE",
         }).then((response) => {
           if (response.status === 204) {
-            navigate("/home");
+            navigate("/home/my-code");
             alert("Carte supprimé");
           } else {
             alert("Erreur lors de la supression");
@@ -24,7 +24,7 @@ function CardDelete({ id, children }: CardDeleteProps) {
         });
       }}
     >
-      <button className="container-delete" type="submit">
+      <button id="delete-card" type="submit">
         {children}
       </button>
     </form>

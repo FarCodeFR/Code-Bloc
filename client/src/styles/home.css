@@ -3,7 +3,6 @@
     text-align: center;
     font-size: 90px;
     margin: 10px;
-    font-family: var(--font-family);
   }
   & a {
     text-decoration: none;
@@ -30,5 +29,26 @@
     color: rgb(255, 255, 255);
     background-color: black;
     border-radius: 15px;
+  }
+}
+
+/* * RESPONSIVE  */
+
+@media screen and (max-width: 440px) {
+  .container-home-navigation {
+    & h1 {
+      font-size: 64px;
+    }
+    & nav {
+      padding: 1em;
+      background-color: black;
+      width: 100%;
+      border-radius: 0;
+    }
+    & nav > a {
+      height: 3em;
+      border: solid white 2px;
+      font-size: 20px;
+    }
   }
 }
