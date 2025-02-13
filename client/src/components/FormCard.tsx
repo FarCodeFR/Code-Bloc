@@ -1,24 +1,60 @@
-function FormCard() {
-  function handleKeyDown(el: React.ChangeEvent<HTMLTextAreaElement>) {
-    const target = el.target;
-    target.style.height = "inherit";
-    target.style.height = `${el.target.scrollHeight}px`;
-  }
+type CardData = {
+  title: string;
+  description: string;
+  image: string;
+};
+
+interface CardFromProps {
+  onSubmit: (card: CardData) => void;
+  defaultValue: CardData;
+}
+
+function FormCard({ defaultValue, onSubmit }: CardFromProps) {
   return (
-    <form className="container-form-card">
-      <figure>
-        <input type="text" placeholder="Function handleClick" />
-        <select>
-          <option value="outils">--Outils--</option>
-          <option value="react">React</option>
-          <option value="express">Express.js</option>
-          <option value="css">Css</option>
-        </select>
-        <textarea name="text" onChange={handleKeyDown}>
-          Votre code
-        </textarea>
-      </figure>
-    </form>
+    <>
+      <form
+        className="container-form-card"
+        onSubmit={(event) => {
+          event.preventDefault();
+          const formData = new FormData(event.currentTarget);
+          const title = formData.get("title") as string;
+          const description = formData.get("description") as string;
+          const image = formData.get("image") as string;
+          onSubmit({
+            title,
+            description,
+            image,
+          });
+        }}
+      >
+        <figure>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            required
+            defaultValue={defaultValue.title}
+            placeholder="Function handleClick"
+          />
+          <input
+            name="image"
+            required
+            defaultValue={defaultValue.image}
+            type="text"
+            placeholder="Votre image"
+          />
+          <input
+            name="description"
+            required
+            defaultValue={defaultValue.description}
+            type="text"
+          />
+        </figure>
+        <section className="container-card-button">
+          <button type="submit">Ajouter</button>
+        </section>
+      </form>
+    </>
   );
 }
 export default FormCard;
